@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	body{
+		overflow: hidden;
+	}
+	.banner1,.banner2,.banner3{
+		height:500px;
+		width: 80%;
+		position: absolute;
+		margin-left: 10%;
+		border: 5px solid black; 
+
+	}
+	img{
+		width: 100%;
+		height: 500px;
+	}
+	
+	.banner1{
+		animation: slide1 8s linear infinite;
+	}
+	.banner2{
+		animation: slide2 8s linear infinite;
+	}
+	.banner3{
+		animation: slide3 8s linear infinite;
+	}
+
+	
+	@keyframes slide1{
+		0%{
+			visibility: visible;
+		}
+		25%{
+			visibility: hidden;
+		}
+		50%{
+			visibility: hidden;
+		}
+		75%{
+			visibility: hidden;
+		}
+		100%{
+			visibility: hidden;
+		}
+	}
+	@keyframes slide2{
+		0%{
+			visibility: hidden;
+		}
+		25%{
+			visibility: hidden;
+		}
+		50%{
+			visibility: visible;
+		}
+		75%{
+			visibility: hidden;
+		}
+		100%{
+			visibility: hidden;
+		}
+	}
+	@keyframes slide3{
+		0%{
+			visibility: hidden;
+		}
+		25%{
+			visibility: hidden;
+		}
+		50%{
+			visibility: hidden;
+		}
+		75%{
+			visibility: hidden;
+		}
+		100%{
+			visibility: visible;
+		}
+	}
+
+
+
+</style>
+</head>
+<body>
+<div class="banner1">
+	<img src="images/image1.jpeg">
+</div>
+<div class="banner2">
+	<img src="images/image2.jpg">
+</div>
+<div class="banner3">
+	<img src="images/image3.jpg">
+</div>
+</body>
+</html>
